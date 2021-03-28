@@ -32,7 +32,7 @@ html::-webkit-scrollbar-thumb {
 
 .scrapbookentry ::-webkit-scrollbar {
     height:2px;
-    width:1px;
+    width:1.5px;
     background:inherit;
 }
 
@@ -262,7 +262,7 @@ section {
 }
 
 .entry-desc {
-    max-height: 120px;
+    max-height: 160px;
     overflow-y: auto;
     padding-right: 5px;
     margin-top: 15px; 
@@ -391,7 +391,7 @@ section {
 }
 
 .longform-desc {
-    max-height: 130px;
+    max-height: 210px;
     overflow-y: auto;
     padding-right: 5px;
     margin-top: 10px; 
