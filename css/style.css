@@ -86,6 +86,14 @@ aside {
 /*large screen only*/
 /*@media screen and (min-width: 992px){*/
 
+aside a{
+    font-size: 1.2em; 
+}
+
+aside p {
+    margin-bottom: .2em;
+    font-size: 1.2em; 
+}
 
     aside li {
         list-style:none;
