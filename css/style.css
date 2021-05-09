@@ -117,10 +117,11 @@ aside p {
     
     aside h1 {
         color: #333333;
-        font-size: 4em;
+        font-size: 4.5em;
         letter-spacing: 5px;
         margin-bottom: 10px;
         font-weight: 300;
+        font-family: Arvo, serif; 
     }
     
     /* archives*/
