@@ -27,7 +27,9 @@ table_reads('reads').select({
     if (err) { console.error(err); return; }
 });
 
-app_longform.factory('entries', return table_reads)
+app_longform.factory('entries', function() {
+    return table_reads});
+
 console.log(table_reads)
 
 
