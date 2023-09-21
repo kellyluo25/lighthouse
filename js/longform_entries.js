@@ -49,18 +49,18 @@
 //});
 
 
+const headers = {'Authorization': "Bearer patyJvoc1b615Uetq.c55dda14eed4e7006db2edf832aff95988556032ff3adc4c13262f4b6820f789"}
 // new 
 app_longform.factory('entries', ['$http', function($http) {
-  return $http.get('https://api.airtable.com/v0/app5lKJ3fALLBkCtj/reads?api_key=keyjxzR8ckt48ealv&sort%5B0%5D%5Bfield%5D=read_date&sort%5B0%5D%5Bdirection%5D=desc')
+  return $http.get('https://api.airtable.com/v0/app5lKJ3fALLBkCtj/reads?sort%5B0%5D%5Bfield%5D=read_date&sort%5B0%5D%5Bdirection%5D=desc', { headers})
         .then(function(response) {
           // return data of the GET response
           return response.data;
         })
 }]);
-
 // oldreads
 app_longform.factory('oldentries', ['$http', function($http) {
-  return $http.get('https://api.airtable.com/v0/app5lKJ3fALLBkCtj/oldreads?api_key=keyjxzR8ckt48ealv')
+  return $http.get('https://api.airtable.com/v0/app5lKJ3fALLBkCtj/oldreads', {headers})
         .then(function(response) {
           // return data of the GET response
           return response.data;
